@@ -15,222 +15,218 @@
 
   <properties>
 
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.source>1.8</maven.compiler.source>
 
-    <maven.compiler.target>1.7</maven.compiler.target>
+		<maven.compiler.target>1.8</maven.compiler.target>
 
-  </properties>
+	</properties>
 
 
 
+	<dependencies>
 
+		<dependency>
 
+			<groupId>org.junit.jupiter</groupId>
 
+			<artifactId>junit-jupiter-api</artifactId>
 
-  <dependencies>
+			<version>5.3.2</version>
 
+			<scope>test</scope>
 
+		</dependency>
 
-      <dependency>
 
-        <groupId>org.junit.jupiter</groupId>
 
-        <artifactId>junit-jupiter-api</artifactId>
+<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params -->
 
-        <version>5.1.0</version>
+		<dependency>
 
-        <scope>test</scope>
+    			<groupId>org.junit.jupiter</groupId>
 
-      </dependency>
+    			<artifactId>junit-jupiter-params</artifactId>
 
+				<version>5.3.2</version>
 
+				<scope>test</scope>
 
+			</dependency>
 
 
-    <dependency>
 
-      <groupId>org.junit.jupiter</groupId>
 
-      <artifactId>junit-jupiter-params</artifactId>
 
-      <version>5.1.0</version>
+<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
 
-      <scope>test</scope>
+		<dependency>
 
-    </dependency>
+		    	<groupId>org.junit.jupiter</groupId>
 
+	    		<artifactId>junit-jupiter-engine</artifactId>
 
+	    		<version>5.3.2</version>
 
+    			<scope>test</scope>
 
+		</dependency>
 
-    <dependency>
+		<dependency>
 
-      <groupId>org.junit.jupiter</groupId>
+		    	<groupId>org.junit.platform</groupId>
 
-      <artifactId>junit-jupiter-engine</artifactId>
+	    		<artifactId>junit-platform-launcher</artifactId>
 
-      <version>5.1.0</version>
+	    		<version>1.3.2</version>
 
-      <scope>test</scope>
+    			<scope>test</scope>
 
-    </dependency>
+		</dependency>
 
 
 
+		<dependency>
 
+			<groupId>org.assertj</groupId>
 
-    <dependency>
+			<artifactId>assertj-core</artifactId>
 
-      <groupId>org.assertj</groupId>
+			<version>3.11.1</version>
 
-      <artifactId>assertj-core</artifactId>
+			<scope>test</scope>
 
-      <version>3.9.1</version>
+		</dependency>
 
-      <scope>test</scope>
+	</dependencies>
 
-    </dependency>
 
-  </dependencies>
 
+	<build>
 
+		<pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
 
+			<plugins>
 
+				<plugin>
 
+					<artifactId>maven-clean-plugin</artifactId>
 
+					<version>3.1.0</version>
 
+				</plugin>
 
+				<plugin>
 
-  <build>
+					<artifactId>maven-site-plugin</artifactId>
 
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+					<version>3.7.1</version>
 
-      <plugins>
+				</plugin>
 
-        <plugin>
+				<plugin>
 
-          <artifactId>maven-clean-plugin</artifactId>
+					<artifactId>maven-project-info-reports-plugin</artifactId>
 
-          <version>3.1.0</version>
+					<version>3.0.0</version>
 
-        </plugin>
+				</plugin>
 
-        <plugin>
+				<!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
 
-          <artifactId>maven-site-plugin</artifactId>
+				<plugin>
 
-          <version>3.7.1</version>
+					<artifactId>maven-resources-plugin</artifactId>
 
-        </plugin>
+					<version>3.0.2</version>
 
-        <plugin>
+				</plugin>
 
-          <artifactId>maven-project-info-reports-plugin</artifactId>
+				<plugin>
 
-          <version>3.0.0</version>
+					<artifactId>maven-compiler-plugin</artifactId>
 
-        </plugin>
+					<version>3.8.0</version>
 
-        <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+				</plugin>
 
-        <plugin>
+				<plugin>
 
-          <artifactId>maven-resources-plugin</artifactId>
+					<artifactId>maven-surefire-plugin</artifactId>
 
-          <version>3.0.2</version>
+					<version>2.22.1</version>
 
-        </plugin>
+				</plugin>
 
-        <plugin>
+				<plugin>
 
-          <artifactId>maven-compiler-plugin</artifactId>
+					<artifactId>maven-jar-plugin</artifactId>
 
-          <version>3.8.0</version>
+					<version>3.0.2</version>
 
-        </plugin>
+				</plugin>
 
-        <plugin>
+				<plugin>
 
-          <artifactId>maven-surefire-plugin</artifactId>
+					<artifactId>maven-install-plugin</artifactId>
 
-          <version>2.22.1</version>
+					<version>2.5.2</version>
 
-        </plugin>
+				</plugin>
 
-        <plugin>
+				<plugin>
 
-          <artifactId>maven-jar-plugin</artifactId>
+					<artifactId>maven-deploy-plugin</artifactId>
 
-          <version>3.0.2</version>
+					<version>2.8.2</version>
 
-        </plugin>
+				</plugin>
 
-        <plugin>
+				<plugin>
 
-          <artifactId>maven-install-plugin</artifactId>
+					<groupId>org.codehaus.mojo</groupId>
 
-          <version>2.5.2</version>
+					<artifactId>cobertura-maven-plugin</artifactId>
 
-        </plugin>
+					<version>2.7</version>
 
-        <plugin>
+					<configuration>
 
-          <artifactId>maven-deploy-plugin</artifactId>
+						<formats>
 
-          <version>2.8.2</version>
+							<format>html</format>
 
-        </plugin>
+							<format>xml</format>
 
-        <plugin>
+						</formats>
 
-          <groupId>org.codehaus.mojo</groupId>
+						<check />
 
-          <artifactId>cobertura-maven-plugin</artifactId>
+					</configuration>
 
-          <version>2.7</version>
+				</plugin>
 
-          <configuration>
+			</plugins>
 
-            <formats>
+		</pluginManagement>
 
-              <format>html</format>
+	</build>
 
-              <format>xml</format>
 
-            </formats>
 
-            <check />
+	<reporting>
 
-          </configuration>
+		<plugins>
 
-        </plugin>
+			<plugin>
 
-      </plugins>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
 
-    </pluginManagement>
+			</plugin>
 
-  </build>
+		</plugins>
 
-
-
-  <reporting>
-
-    <plugins>
-
-      <plugin>
-
-        <artifactId>maven-project-info-reports-plugin</artifactId>
-
-      </plugin>
-
-
-
-    </plugins>
-
-  </reporting>
-
-
+	</reporting>
 
 </project>
