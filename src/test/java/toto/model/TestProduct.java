@@ -6,7 +6,8 @@ import java.util.*;
 
 
 public class TestProduct{
-    @Test
+    
+	@Test
     public void testName(){
         Product produitA = new Product("produitA", ProductUnit.Kilo);
         Assertions.assertThat(produitA.getName()).isEqualTo("produitA");

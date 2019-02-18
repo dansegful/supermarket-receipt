@@ -7,6 +7,7 @@ import java.util.*;
 
 
 public class TestShoppingCart {
+	
 	private ShoppingCart cart = new ShoppingCart();
 	private Product produitT = new Product("produitT", ProductUnit.Each);	
 	

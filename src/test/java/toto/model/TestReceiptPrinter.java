@@ -7,7 +7,8 @@ import org.junit.jupiter.api.Test;
 
 
 public class TestReceiptPrinter {
-    @Test
+    
+	@Test
     public void testPrintReceipt(){
         SupermarketCatalog catalog = new FakeCatalog();
         Product toothbrush = new Product("toothbrush", ProductUnit.Each);

@@ -7,7 +7,8 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 
 public class SupermarketTest {
-    @Test
+    
+	@Test
     public void testSomething() {
         SupermarketCatalog catalog = new FakeCatalog();
         Product toothbrush = new Product("toothbrush", ProductUnit.Each);

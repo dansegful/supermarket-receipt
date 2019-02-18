@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.assertj.core.api.Assertions;
 
 public class TestDiscount {
+	
 	@Test	
     public void testDescription(){
         Product produitA = new Product("produitA", ProductUnit.Kilo);

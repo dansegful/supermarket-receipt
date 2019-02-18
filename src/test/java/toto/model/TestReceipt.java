@@ -5,7 +5,8 @@ import org.assertj.core.api.Assertions;
 import java.util.*;
 
 public class TestReceipt {
-	 @Test
+	
+	@Test
     public void testPrice() {
         Product produitA = new Product("produitA", ProductUnit.Kilo);
         ReceiptItem receiptItem = new ReceiptItem(produitA,2.0,1.99, 3.98);
