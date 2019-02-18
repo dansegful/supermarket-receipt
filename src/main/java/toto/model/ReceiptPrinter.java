@@ -1,4 +1,4 @@
-package toto;
+package java.toto;
 
 import toto.model.*;
 
@@ -11,9 +11,11 @@ public class ReceiptPrinter {
     public ReceiptPrinter() {
         this(40);
     }
+
     public ReceiptPrinter(int columns) {
         this.columns = columns;
     }
+
     public String printReceipt(Receipt receipt) {
         StringBuilder result = new StringBuilder();
         for (ReceiptItem item : receipt.getItems()) {
