@@ -17,4 +17,5 @@ public class TestShoppingCart {
 		List <ProductQuantity> listItems = cart.getItems();
 		Assertions.assertNotNull(listItems);
 	}
+	
 }

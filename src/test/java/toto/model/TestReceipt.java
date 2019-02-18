@@ -3,7 +3,7 @@ package toto.model;
 import org.junit.jupiter.api.Test;
 import org.assertj.core.api.Assertions;
 import java.util.*;
-
+ 
 public class TestReceipt {
 	
 	@Test

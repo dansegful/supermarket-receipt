@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 
 public class TestReceiptPrinter {
-    
+	
 	@Test
     public void testPrintReceipt(){
         SupermarketCatalog catalog = new FakeCatalog();
